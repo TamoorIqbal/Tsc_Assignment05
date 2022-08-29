@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Typescript Assignment By Hafiz Tamoor Iqbal</h1>
+    <div>
+        <h2>1. Write a ts program to find maximum between two numbers.</h2>
+        <p>
+            <code>
+        let number1:  string | null = prompt("Please Enter 1st Number"); <br />
+        let number2:  string | null = prompt("Please Enter 2nd Number"); <br />
+        if(number1 && number2){<br />
+            if (num1 > num2) {<br>
+                alert(num2 + " is maximum")<br>
+            }<br>
+            if (num1 < num2) {<br>
+                alert(num2 + " is maximum")<br>
+            } <br>
+            else {<br>
+                alert("Boths Numbers Are Equal")<br>
+            }<br>
+        }
+    </code>
+        </p>
+        <button onclick="maximumFindMax2()">Check The maximum 2 Number</button>
+    </div>
+
+    <div>
+        <h2>2. Write a ts program to find maximum between three numbers.</h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter 1st Number");<br/>
+                let number2: string | null = prompt("Please Enter 2nd Number");<br/>
+                let number3: string | null = prompt("Please Enter 2nd Number");<br/> 
+                 if (number1 && number2 && number3) {<br/>
+                     let num1: number = parseInt(number1)<br/> 
+                    let num2: number = parseInt(number2)<br/>
+                    let num3: number = parseInt(number3)<br/> 
+                    if (num1 > num2 && num1 > num3) {<br>
+                        alert(`Number one ${num1} Is Maximum`)<br>
+                    }<br>
+                    else if (num2 > num1 && num2 > num3) {<br>
+                        alert(`Number Two ${num2} Is Maximum`)<br>
+                    }<br>
+                    else if (num3 > num1 && num3 > num2) {<br>
+                        alert(`Number Three ${num3} Is Maximum`)<br>
+                    }<br>
+                    else if (num1 == num2 && num2 == num3) {<br>
+                        alert(`All Numbers are Equal ${num1} ${num2} ${num3}`)<br>
+                    }<br>
+                    else if (num1 == num2 && num1 > num3) {<br>
+                        alert(`Number one ${num1} is Equal to Number two ${num2} and Number Three <br>is Minimum ${num3}`)
+                    }<br>
+                    else if (num1 < num2 && num2 == num3) {<br>
+                        alert(`Number one  ${num1} is Minimum Number , Number Two ${num2} and Numb<br>er Three ${num3} are Equals `)
+                    }<br>
+                    else {<br>
+                        alert("Please Enter Correct Number")<br>
+                    }<br>
+   </code>
+        </p>
+        <button onclick="maximumFindMax3()">Check The maximum 3 Number</button>
+    </div>
+    <div>
+
+        <h2>3. Write a ts program to check whether a number is negative, positive or zero.</h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter Number");<br />
+                if (number1) {<br />
+                     let num1: number = parseInt(number1)<br />
+                    if (num1 === 0) {<br />
+                        alert("Number is Zer0")<br />
+                    }<br />
+                    else if (num1 < 0) {<br />
+                        alert("Number is Negative")<br />
+                    }<br />
+                    else {<br />
+                        alert("Number is Positive")<br />
+                    }<br />
+                 }<br />
+            </code>
+        </p>
+
+        <button onclick="findNumberState()">Number is negative, positive or zero.
+        </button>
+    </div>
+    <div>
+
+        <h2>4. Write a ts program to check whether a number is divisible by 5 and 11 or not.</h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter Number");<br>
+                console.log("number1", number1)<br>
+                if (number1) {<br>
+                    let num1: number = parseInt(number1)<br>
+                    if ((num1 % 5 == 0) && (num1 % 11 == 0)){<br>
+                        alert("Yes..divisible by 5 and 11")<br>
+                    }<br>
+                    else {<br>
+                        alert("No..divisible by 5 and 11")<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="Divisible()">Divisible by 5 and 11
+        </button>
+    </div>
+
+    <div>
+        <h2>5. Write a ts program to check whether a number is even or odd.</h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter Number");<br>
+                if (number1) {<br>
+                    let num1: number = parseInt(number1)<br>
+                    if (num1 % 2 === 0) {<br>
+                        alert(num1 + " is Even Number")<br>
+                    }<br>
+                    else {<br>
+                        alert(num1 + " is Odd Number")<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="evenodd()">Number is even or odd
+        </button>
+    </div>
+
+    <div>
+        <h2>6. Write a ts program to check whether a year is leap year or not.</h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter Year");<br>
+                if (number1) {<br>
+                    let year: number = parseInt(number1)<br>
+                    if (year % 4 === 0) {<br>
+                        alert(year +" Year is leap")<br>
+                    }<br>
+                    else {<br>
+                        alert(year +" Year is not leap")<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="year()">Year is leap year or not
+        </button>
+    </div>
+
+    <div>
+        <h2>7. Write a ts program to check whether a character is alphabet or not.</h2>
+        <p>
+            <code>
+                let character: string | null = prompt("Please Enter Character");<br>
+                if (character?.length==1) { {<br>
+                    let chAr: number = character.charCodeAt(0)<br>
+                    if (chAr >= 65 && chAr <= 90 || chAr >= 97 && chAr <= 122) {<br>
+                        alert(character + " is alphabet character")<br>
+                    }<br>
+                    else {<br>
+                        alert(character + " is not alphabet character")<br>
+                    }<br>
+                } <br>
+                else {<br>
+                    alert("Please Enter Single Charcter")<br>
+                }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="alphabet()">Character is alphabet or not
+        </button>
+    </div>
+
+    <div>
+        <h2>8. Write a ts program to input any alphabet and check whether it is vowel or consonant.</h2>
+        <p>
+            <code>
+                let character: string | null = prompt("Please Enter Character");<br>
+                let vowel: string[] = ["a", "e", "i", "o", "u"]<br>
+                if (character) {<br>
+                    let chAr: string = character.toLocaleLowerCase()<br>
+                    for (let i = 0; i < vowel.length; i++) {<br>
+                        if (vowel[i] == chAr) {<br>
+                            alert(chAr + " is Vowel character")<br>
+                            return<br>
+                        }<br>
+                        else {<br>
+                            alert("<b>" + chAr + "</b>" + " is Not Vowel character")<br>
+                            return<br>
+                        }<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="vowel()">Vowel or Consonant
+        </button>
+    </div>
+
+    <div>
+        <h2>9. Write a ts program to input any character and check whether it is alphabet, digit or special character.
+        </h2>
+        <p>
+            <code>
+                let character: string | null = prompt("Please Enter Character");<br>
+                if (character) {<br>
+                let chAr: number = character.charCodeAt(0)<br>
+                console.log(chAr);<br>
+                if (chAr >= 65 && chAr <= 90) {<br>
+                    alert(character + " is Uppercase character")<br>
+                }<br>
+                else if (chAr >= 97 && chAr <= 122) {<br>
+                    alert(character + " is Lowercase character")<br>
+                }<br>
+                else {<br>
+                    alert(character + " is not alphabet character")<br>
+                }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="alphabetChar()">Character is alphabet digit or special
+        </button>
+    </div>
+
+    <div>
+        <h2>10. Write a ts program to check whether a character is uppercase or lowercase alphabet.</h2>
+        <p>
+            <code>
+                let character: string | null = prompt("Please Enter Year");<br>
+                if (character) {<br>
+                    let chAr: number = character.charCodeAt(0)<br>
+                    if (chAr >= 65 && chAr <= 90 || chAr >= 97 && chAr <= 122) {<br>
+                        alert(character + " is alphabet character")<br>
+                    }<br>
+                    else {<br>
+                        alert(character + " is not alphabet character")<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="upperLower()">Character is uppercase or lowercase
+        </button>
+    </div>
+
+    <div>
+        <h2>11. Write a ts program to input week number and print week day.</h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter Number");<br>
+                if (number1) {<br>
+                    let num1: number = parseInt(number1)<br>
+                    switch (num1) {<br>
+                        case 1:<br>
+                            alert("Monday")<br>
+                            break;<br>
+                        case 2:<br>
+                            alert("Tuesday")<br>
+                            break;<br>
+                        case 3:<br>
+                            alert("Wednesday")<br>
+                            break;<br>
+                        case 4:<br>
+                            alert("Thursday")<br>
+                            break;<br>
+                        case 5:<br>
+                            alert("Friday")<br>
+                            break;<br>
+                        case 6:<br>
+                            alert("Saturday")<br>
+                            break;<br>
+                        case 7:<br>
+                            alert("Sunday")<br>
+                            break;<br>
+                        default:<br>
+                            alert("Invalid Input! Please enter week number between 1-7");<br>
+                            break;<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="weekNumber()">Week number and print Week day
+        </button>
+    </div>
+    <div>
+        <h2>12. Write a ts program to input month number and print number of days in that month.</h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter Number");<br>
+        if (number1) {<br>
+        let num1: number = parseInt(number1)<br>
+        switch (num1) {<br>
+            case 1:<br>
+                alert("31 days")<br>
+                break;<br>
+            case 2:<br>
+                alert("28 or 29 days")<br>
+                break;<br>
+            case 3:<br>
+                alert("31 days")<br>
+                break;<br>
+            case 4:<br>
+                alert("30 days")<br>
+                break;<br>
+            case 5:<br>
+                alert("31 days")<br>
+                break;<br>
+            case 6:<br>
+                alert("30 days")<br>
+                break;<br>
+            case 7:<br>
+                alert("31 days")<br>
+                break;<br>
+            case 8:<br>
+                alert("31 days")<br>
+                break;<br>
+            case 9:<br>
+                alert("30 days")<br>
+                break;<br>
+            case 10:<br>
+                alert("31 days")<br>
+                break;<br>
+            case 11:<br>
+                alert("30 days")<br>
+                break;<br>
+            case 12:<br>
+                alert("31 days")<br>
+                break;<br>
+            default:<br>
+                alert("Invalid Input! Please enter month number between 1-12");<br>
+                break;<br>
+        }<br>
+    }<br>
+            </code>
+        </p>
+
+        <button onclick="monthNumber()">Month number and print day
+        </button>
+    </div>
+
+    <div>
+        <h2>13. Write a ts program to count total number of notes in given amount.
+        </h2>
+        <p>
+            <code>
+                let amount: string | null = prompt("Please Enter Amount");<br>
+                let notes: number[] = [5000, 1000, 500, 100, 50, 20, 10, 5, 2, 1]<br>
+                if (amount) {<br>
+                    let amount1: number = parseInt(amount);<br>
+                     for (let i = 0; i < notes.length; i++) {<br>
+                        {<br>
+                            alert(notes[i] + " Note is : " + Math.floor(amount1 / notes[i]));<br>
+                            amount1 = amount1 % notes[i];<br>
+                        }<br>
+                    }<br>
+                }<br>
+            
+            </code>
+        </p>
+
+        <button onclick="note()">Character is alphabet digit or special
+        </button>
+    </div>
+
+    <div>
+        <h2>14. Write a ts program to input angles of a triangle and check whether triangle is valid or not.
+        </h2>
+        <p>
+            <code>
+                let angle1: string | null = prompt("Please Enter 1st Angle");<br>
+                let angle2: string | null = prompt("Please Enter 2nd Angle");<br>
+                let angle3: string | null = prompt("Please Enter 2nd Angle");<br>
+                if (angle1 && angle2 && angle3) {<br>
+                    let num1: number = parseInt(angle1)<br>
+                    let num2: number = parseInt(angle2)<br>
+                    let num3: number = parseInt(angle3)<br>
+                    let allSides: number = num1 + num2 + num3<br>
+                    if (allSides == 180 && num1 > 0 && num2 > 0 && num3 > 0) {<br>
+                        alert("Triangle is valid")<br>
+                    }<br>
+                    else {<br>
+                        alert("Triangle is not valid")<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="angles()">Triangle is valid or not
+        </button>
+    </div>
+    <div>
+        <h2>15. Write a ts program to input all sides of a triangle and check whether triangle is valid or not.
+        </h2>
+        <p>
+            <code>
+                let angle1: string | null = prompt("Please Enter 1st Angle");<br>
+                let angle2: string | null = prompt("Please Enter 2nd Angle");<br>
+                let angle3: string | null = prompt("Please Enter 2nd Angle");<br>
+                if (angle1 && angle2 && angle3) {<br>
+                    let num1: number = parseInt(angle1)<br>
+                    let num2: number = parseInt(angle2)<br>
+                    let num3: number = parseInt(angle3)<br>
+                    if ((num1 + num2) > num3 || (num1 + num3) > num2 || (num2 + num3) > num1) {<br>
+                        alert("Triangle is valid")<br>
+                    }<br>
+                    else {<br>
+                        alert("Triangle is not valid")<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="allSideAngle()">All sides Triangle is valid or not
+        </button>
+    </div>
+    <div>
+        <h2>16. Write a ts program to check whether the triangle is equilateral, isosceles or scalene triangle.
+        </h2>
+        <p>
+            <code>
+                let angle1: string | null = prompt("Please Enter 1st Angle");<br>
+                let angle2: string | null = prompt("Please Enter 2nd Angle");<br>
+                let angle3: string | null = prompt("Please Enter 2nd Angle");<br>
+                if (angle1 && angle2 && angle3) {<br>
+                    let num1: number = parseInt(angle1)<br>
+                    let num2: number = parseInt(angle2)<br>
+                    let num3: number = parseInt(angle3)<br>
+                    if ((num1 + num2) > num3 && (num1 + num3) > num2 && (num2 + num3) > num1) {<br>
+                        alert("Triangle is valid")<br>
+                    }<br>
+                    else {<br>
+                        alert("Triangle is not valid")<br>
+                    }<br>
+                    if(num1==num2&&num2==num3){<br>
+                        console.log("equilateral Triangle");<br>
+                      }else if(num1==num2||num2==num3||num3==num1){<br>
+                        console.log("isosceles Triangle")<br>
+                      }else{<br>
+                        console.log("scalene Triangle");<br>
+                      }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="scalene()">Triangle is equilateral,isosceles,scalene triangle
+        </button>
+    </div>
+    <div>
+        <h2>17. Write a ts program to find all roots of a quadratic equation.
+        </h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter 1st Number");<br>
+                let number2: string | null = prompt("Please Enter 2nd Number");<br>
+                let number3: string | null = prompt("Please Enter 2nd Number");<br>
+                if (number1 && number2 && number3) {<br>
+                    let a: number = parseInt(number1)<br>
+                    let b: number = parseInt(number2)<br>
+                    let c: number = parseInt(number3)<br>
+                    let x1: number;<br>
+                    let x2: number;<br>
+                    let realPart: number;<br>
+                    let imaginaryPart: number;<br>
+                    let discriminant: number = b * b - 4 * a * c;<br>
+                    if (discriminant > 0) {<br>
+                        x1 = (-b + Math.sqrt(discriminant)) / (2 * a);<br>
+                        x2 = (-b - Math.sqrt(discriminant)) / (2 * a);<br>
+                        alert(`Roots are real and different.  x1 =  ${x1} and  x2 = ${x2}<br>`)
+                    }<br>
+                    else if (discriminant == 0) {<br>
+                        x1 = -b / (2 * a);<br>
+                        alert(`Roots are real and same. x1 = x2 = ${x1}`);<br>
+                    }<br>
+                    else {<br>
+                        realPart = -b / (2 * a);<br>
+                        imaginaryPart = Math.sqrt(-discriminant) / (2 * a);<br>
+                        alert(`Roots are complex and different.   <br>
+                    x1 =   ${realPart}  +  ${imaginaryPart}   <br>
+                    x2 =   ${realPart}  - ${imaginaryPart}`);<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="QuadRoot()">Triangle is equilateral,isosceles,scalene triangle
+        </button>
+    </div>
+    <div>
+        <h2>18. Write a ts program to calculate profit or loss.
+        </h2>
+        <p>
+            <code>
+                let cost: string | null = prompt("Please Enter Cost");<br>
+                let sell: string | null = prompt("Please Enter Sell");<br>
+                if (cost && sell) {<br>
+                    let cost1: number = parseInt(cost)<br>
+                    let sell1: number = parseInt(sell)<br>
+                     if (sell1 > cost1) {<br>
+                        alert(`Profit =  ${sell1 - cost1}`);<br>
+                    }<br>
+                    else if (cost1 > sell1) {<br>
+                        alert(`Loss = ${sell1 - cost1}`);<br>
+                    }<br>
+                    else {<br>
+                        alert("No Profit No Loss.");<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="calculate()">Calculate profit or loss
+        </button>
+    </div>
+    <div>
+        <h2>19. Write a ts program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and
+            Computer. Calculate percentage and grade.
+        </h2>
+        <p>
+            <code>
+                let number1: string | null = prompt("Please Enter Physics Marks");<br>
+                let number2: string | null = prompt("Please Enter Chemistry Marks"<br>);
+                let number3: string | null = prompt("Please Enter Bio Marks");<br>
+                let number4: string | null = prompt("Please Enter Math Marks");<br>
+                let number5: string | null = prompt("Please Enter Computer Marks")<br>;
+                if (number1 && number2 && number3 && number4 && number5) {<br>
+                    let physics: number = parseInt(number1)<br>
+                    let chemistry: number = parseInt(number2)<br>
+                    let bio: number = parseInt(number3)<br>
+                    let math: number = parseInt(number4)<br>
+                    let computer: number = parseInt(number5)<br>
+                    let total:number = physics + chemistry + bio + math + computer<br>;
+                    let percent:number = total / 5;<br>
+                    if (percent >= 90) {<br>
+                        alert( "Grade=A");<br>
+                    }<br>
+                    else if (percent >= 80) {<br>
+                        alert( "Grade=B");<br>
+                    }<br>
+                    else if (percent >= 70) {<br>
+                        alert( "Grade=C");<br>
+                    }<br>
+                    else if (percent >= 60) {<br>
+                        alert( "Grade=D");<br>
+                    }<br>
+                    else if (percent >= 40) {<br>
+                        alert( "Grade=E");<br>
+                    }<br>
+                    else {<br>
+                        alert( "Gread F");<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="marks()">Calculate percentage and grade
+        </button>
+    </div>
+    <div>
+        <h2>20. Write a ts program to input basic salary of an employee and calculate its Gross salary.
+        </h2>
+        <p>
+            <code>
+                let salary1: string | null = prompt("Please Enter Salary")<br>;
+                let DA: number;<br>
+                let HRA: number;<br>
+                let gross: number;<br>
+                if (salary1) {<br>
+                    let salary: number = parseInt(salary1)<br>
+                    if (salary <= 10000) {<br>
+                        DA = salary * 20 / 100;<br>
+                        HRA = salary * 80 / 100;<br>
+                        gross = salary + DA + HRA;<br>
+                        alert("the gross salary is Rs. " + gross);<br>
+                    }<br>
+                    if (salary <= 20000) {<br>
+                        DA = salary * 25 / 100;<br>
+                        HRA = salary * 90 / 100;<br>
+                        gross = salary + DA + HRA;<br>
+                        alert("the gross salary is Rs. " + gross);<br>
+                    }<br>
+                    else if (salary > 20000) {<br>
+                        DA = salary * 30 / 100;<br>
+                        HRA = salary * 95 / 100;<br>
+                        gross = salary + DA + HRA;<br>
+                        alert("the gross salary is Rs. " + gross);<br>
+                    }<br>
+                    else {<br>
+                        alert("you have no salary");<br>
+                    }<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="grossSalary()">calculate its Gross salary
+        </button>
+    </div>
+
+    <div>
+        <h2>21. Write a ts program to input electricity unit charges and calculate total electricity bill.</h2>
+        <p>
+            <code>
+                let unit1: string | null = prompt("Please Enter Units");<br>
+                if (unit1) {<br>
+                    let unit: number = parseInt(unit1)<br>
+                    let amount: number;<br>
+                    let charge: number;<br>
+                    let total: number;<br>
+                    if (unit <= 50) {<br>
+                        amount = unit * 0.50;<br>
+                    }<br>
+                    else if (unit <= 150) {<br>
+                        amount = 25 + ((unit - 50) * 0.75);<br>
+                    }<br>
+                    else if (unit <= 250) {<br>
+                        amount = 100 + ((unit - 150) * 1.20);<br>
+                    }<br>
+                    else {<br>
+                        amount = 220 + ((unit - 250) * 1.50);<br>
+                    }<br>
+                    charge = amount * 0.20;<br>
+                    total = amount + charge;<br>
+                    alert(`Electricity Bill = Rs. ${total}`);<br>
+                }<br>
+            </code>
+        </p>
+
+        <button onclick="bill()">Electricity Bill
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
